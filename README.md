@@ -1,1 +1,1 @@
-Derek Valecnia Assignment Proffesor Park 
+Derek Valencia College Assignment Professor Park 
