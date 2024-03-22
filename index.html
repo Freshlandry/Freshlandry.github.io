@@ -3,37 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinosaurs</title>
+    <title>User Input Form</title>
 </head>
 <body>
-    <!-- Header Line 1 with internal link -->
-    <h1><a href="#introduction">Welcome to the World of Dinosaurs</a></h1>
-
-    <!-- Header Line 2 with internal link -->
-    <h2><a href="#types">Types of Dinosaurs</a></h2>
-
-    <!-- Header Line 3 with internal link -->
-    <h3><a href="#fossils">Fossil Discoveries</a></h3>
-
-    <!-- Introduction section -->
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Welcome to our website dedicated to the fascinating world of dinosaurs. Here, you'll learn about various types of dinosaurs, their habitats, behaviors, and the latest discoveries in paleontology.</p>
-    </section>
-
-    <!-- Types of Dinosaurs section -->
-    <section id="types">
-        <h2>Types of Dinosaurs</h2>
-        <p>There were many different types of dinosaurs, ranging from the massive sauropods to the fearsome theropods. Explore our gallery to learn more about these incredible creatures.</p>
-    </section>
-
-    <!-- Fossil Discoveries section -->
-    <section id="fossils">
-        <h2>Fossil Discoveries</h2>
-        <p>Discoveries of dinosaur fossils have provided valuable insights into the ancient past. Check out our article on recent fossil discoveries and what they reveal about dinosaur evolution.</p>
-    </section>
-
-    <!-- External link -->
-    <p>For more information about dinosaurs, visit <a href="https://en.wikipedia.org/wiki/Dinosaur" target="_blank">Wikipedia's Dinosaur page</a>.</p>
+    <h2>User Input Form</h2>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label for="color">Select Color:</label>
+        <input type="checkbox" id="red" name="color" value="red">
+        <label for="red">Red</label>
+        <input type="checkbox" id="white" name="color" value="white">
+        <label for="white">White</label>
+        <input type="checkbox" id="blue" name="color" value="blue">
+        <label for="blue">Blue</label><br><br>
+        
+        <label for="sport">Select Sport:</label>
+        <select id="sport" name="sport">
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="soccer">Soccer</option>
+            <option value="tennis">Tennis</option>
+            <option value="golf">Golf</option>
+            <option value="swimming">Swimming</option>
+            <option value="cycling">Cycling</option>
+            <option value="volleyball">Volleyball</option>
+            <option value="baseball">Baseball</option>
+            <option value="hockey">Hockey</option>
+        </select><br><br>
+        
+        <label for="comment">Write about Global Warming:</label><br>
+        <textarea id="comment" name="comment" rows="5" cols="50" required></textarea><br><br>
+        
+        <label for="password">Password (max 10 characters):</label>
+        <input type="password" id="password" name="password" maxlength="10" required><br><br>
+        
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
